@@ -32,15 +32,6 @@ try:
             "Please make a Bot from @BotFather and add it's token in TGB_TOKEN."
         )
         exit(1)
-    if (
-        not IG_USN
-        or not IG_PASS
-        or not IG_SECRET
-    ):
-        send_log.warning(
-            "Please fill in the Instagram variables correctly."
-        )
-        exit(1)
 except ImportError as excp:
     send_log.exception(excp)
     exit(1)
